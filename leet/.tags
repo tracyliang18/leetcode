@@ -1,0 +1,116 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ListNode	/home/liangjj/work/Google!/leet/203.py	/^class ListNode(object):$/;"	class	line:2
+__init__	/home/liangjj/work/Google!/leet/203.py	/^    def __init__(self, x):$/;"	member	line:3	class:ListNode
+Solution	/home/liangjj/work/Google!/leet/203.py	/^class Solution(object):$/;"	class	line:7
+removeElements	/home/liangjj/work/Google!/leet/203.py	/^    def removeElements(self, head, val):$/;"	member	line:8	class:Solution
+make_list	/home/liangjj/work/Google!/leet/203.py	/^def make_list(array):$/;"	function	line:27
+print_list	/home/liangjj/work/Google!/leet/203.py	/^def print_list(node):$/;"	function	line:37
+L	/home/liangjj/work/Google!/leet/203.py	/^L = make_list([1,2,3,4,5])$/;"	variable	line:44
+sol	/home/liangjj/work/Google!/leet/203.py	/^sol = Solution()$/;"	variable	line:45
+gen_next	/home/liangjj/work/Google!/leet/algor/kmp.py	/^def gen_next(p):$/;"	function	line:3
+kmp	/home/liangjj/work/Google!/leet/algor/kmp.py	/^def kmp(s,p):$/;"	function	line:22
+algorithm	/home/liangjj/work/Google!/leet/algor/readme.md	/^## algorithm$/;"	function	line:1
+string	/home/liangjj/work/Google!/leet/algor/readme.md	/^### string$/;"	function	line:3
+TreeNode	/home/liangjj/work/Google!/leet/199.py	/^class TreeNode(object):$/;"	class	line:2
+__init__	/home/liangjj/work/Google!/leet/199.py	/^    def __init__(self, x):$/;"	member	line:3	class:TreeNode
+Solution	/home/liangjj/work/Google!/leet/199.py	/^class Solution(object):$/;"	class	line:8
+rightSideView	/home/liangjj/work/Google!/leet/199.py	/^    def rightSideView(self, root):$/;"	member	line:9	class:Solution
+dfs_right_first	/home/liangjj/work/Google!/leet/199.py	/^        def dfs_right_first(level,root):$/;"	function	line:15	function:Solution.rightSideView
+make_node	/home/liangjj/work/Google!/leet/199.py	/^def make_node(ind, array): # leftchild 2*x, right 2*x+1$/;"	function	line:29
+tree	/home/liangjj/work/Google!/leet/199.py	/^tree = make_node(1, [0, 1,2,3,None,5,None,4])$/;"	variable	line:39
+sol	/home/liangjj/work/Google!/leet/199.py	/^sol = Solution()$/;"	variable	line:40
+Solution	/home/liangjj/work/Google!/leet/42.py	/^class Solution(object):$/;"	class	line:1
+trap	/home/liangjj/work/Google!/leet/42.py	/^    def trap(self, height):$/;"	member	line:2	class:Solution
+sol	/home/liangjj/work/Google!/leet/42.py	/^sol = Solution()$/;"	variable	line:44
+Solution	/home/liangjj/work/Google!/leet/30.py	/^class Solution(object):$/;"	class	line:2
+findSubstring	/home/liangjj/work/Google!/leet/30.py	/^    def findSubstring(self, s, words):$/;"	member	line:3	class:Solution
+sol	/home/liangjj/work/Google!/leet/30.py	/^sol = Solution()$/;"	variable	line:65
+Node	/home/liangjj/work/Google!/leet/140.py	/^class Node(object):$/;"	class	line:1
+__init__	/home/liangjj/work/Google!/leet/140.py	/^    def __init__(self):$/;"	member	line:2	class:Node
+_print	/home/liangjj/work/Google!/leet/140.py	/^    def _print(self):$/;"	member	line:7	class:Node
+Trie	/home/liangjj/work/Google!/leet/140.py	/^class Trie(object):$/;"	class	line:10
+__init__	/home/liangjj/work/Google!/leet/140.py	/^    def __init__(self, word_list):$/;"	member	line:11	class:Trie
+Solution	/home/liangjj/work/Google!/leet/140.py	/^class Solution(object):$/;"	class	line:29
+wordBreak	/home/liangjj/work/Google!/leet/140.py	/^    def wordBreak(self, s, wordDict):$/;"	member	line:30	class:Solution
+sentences	/home/liangjj/work/Google!/leet/140.py	/^        def sentences(i):$/;"	function	line:51	function:Solution.wordBreak
+sol	/home/liangjj/work/Google!/leet/140.py	/^sol = Solution()$/;"	variable	line:61
+wordset	/home/liangjj/work/Google!/leet/140.py	/^wordset = set(["cat", "cats", "and", "sand", "dog"])$/;"	variable	line:62
+s	/home/liangjj/work/Google!/leet/140.py	/^s = "catsandsssdog"$/;"	variable	line:63
+Solution	/home/liangjj/work/Google!/leet/319.py	/^class Solution(object):$/;"	class	line:2
+bulbSwitch	/home/liangjj/work/Google!/leet/319.py	/^    def bulbSwitch(self, n):$/;"	member	line:3	class:Solution
+sol	/home/liangjj/work/Google!/leet/319.py	/^sol = Solution()$/;"	variable	line:10
+Solution	/home/liangjj/work/Google!/leet/229.py	/^class Solution(object):$/;"	class	line:1
+minSubArrayLen	/home/liangjj/work/Google!/leet/229.py	/^    def minSubArrayLen(self, s, nums):$/;"	member	line:2	class:Solution
+sol	/home/liangjj/work/Google!/leet/229.py	/^sol = Solution()$/;"	variable	line:37
+Solution	/home/liangjj/work/Google!/leet/62.py	/^class Solution(object):$/;"	class	line:1
+uniquePaths	/home/liangjj/work/Google!/leet/62.py	/^    def uniquePaths(self, m, n):$/;"	member	line:2	class:Solution
+o	/home/liangjj/work/Google!/leet/62.py	/^o = Solution()$/;"	variable	line:16
+Solution	/home/liangjj/work/Google!/leet/289.py	/^class Solution(object):$/;"	class	line:1
+gameOfLife	/home/liangjj/work/Google!/leet/289.py	/^    def gameOfLife(self, board):$/;"	member	line:2	class:Solution
+fill_xy	/home/liangjj/work/Google!/leet/289.py	/^        def fill_xy(x,y):$/;"	function	line:12	function:Solution.gameOfLife
+board	/home/liangjj/work/Google!/leet/289.py	/^board = [[1,1,1],$/;"	variable	line:43
+sol	/home/liangjj/work/Google!/leet/289.py	/^sol = Solution()$/;"	variable	line:47
+TreeLinkNode	/home/liangjj/work/Google!/leet/116.py	/^class TreeLinkNode(object):$/;"	class	line:2
+__init__	/home/liangjj/work/Google!/leet/116.py	/^    def __init__(self, x):$/;"	member	line:3	class:TreeLinkNode
+Solution	/home/liangjj/work/Google!/leet/116.py	/^class Solution(object):$/;"	class	line:9
+connect	/home/liangjj/work/Google!/leet/116.py	/^    def connect(self, root):$/;"	member	line:10	class:Solution
+pro	/home/liangjj/work/Google!/leet/116.py	/^        def pro(node):$/;"	function	line:15	function:Solution.connect
+My Leetcode repo	/home/liangjj/work/Google!/leet/readme.md	/^## My Leetcode repo$/;"	function	line:1
+2016-02-02	/home/liangjj/work/Google!/leet/readme.md	/^### 2016-02-02$/;"	function	line:3
+2016-02-03	/home/liangjj/work/Google!/leet/readme.md	/^### 2016-02-03$/;"	function	line:97
+2016-02-05	/home/liangjj/work/Google!/leet/readme.md	/^### 2016-02-05$/;"	function	line:119
+2016-02-06	/home/liangjj/work/Google!/leet/readme.md	/^### 2016-02-06$/;"	function	line:130
+2016-02-22	/home/liangjj/work/Google!/leet/readme.md	/^### 2016-02-22$/;"	function	line:142
+2016-02-25	/home/liangjj/work/Google!/leet/readme.md	/^### 2016-02-25$/;"	function	line:154
+Solution	/home/liangjj/work/Google!/leet/93.py	/^class Solution(object):$/;"	class	line:3
+restoreIpAddresses	/home/liangjj/work/Google!/leet/93.py	/^    def restoreIpAddresses(self, s):$/;"	member	line:4	class:Solution
+dfs	/home/liangjj/work/Google!/leet/93.py	/^        def dfs(level, start, curres):$/;"	function	line:11	function:Solution.restoreIpAddresses
+sol	/home/liangjj/work/Google!/leet/93.py	/^sol = Solution()$/;"	variable	line:38
+Node	/home/liangjj/work/Google!/leet/ds/trie.py	/^class Node(object):$/;"	class	line:1
+__init__	/home/liangjj/work/Google!/leet/ds/trie.py	/^    def __init__(self):$/;"	member	line:2	class:Node
+_print	/home/liangjj/work/Google!/leet/ds/trie.py	/^    def _print(self):$/;"	member	line:7	class:Node
+Trie	/home/liangjj/work/Google!/leet/ds/trie.py	/^class Trie(object):$/;"	class	line:10
+__init__	/home/liangjj/work/Google!/leet/ds/trie.py	/^    def __init__(self, word_list):$/;"	member	line:11	class:Trie
+show	/home/liangjj/work/Google!/leet/ds/trie.py	/^    def show(self):$/;"	member	line:28	class:Trie
+trie	/home/liangjj/work/Google!/leet/ds/trie.py	/^trie = Trie(["show","shaw"])$/;"	variable	line:39
+BinaryMaxHeap	/home/liangjj/work/Google!/leet/ds/binary_heaps.py	/^class BinaryMaxHeap(object):$/;"	class	line:2
+__init__	/home/liangjj/work/Google!/leet/ds/binary_heaps.py	/^    def __init__(self,array):$/;"	member	line:3	class:BinaryMaxHeap
+heapify	/home/liangjj/work/Google!/leet/ds/binary_heaps.py	/^    def heapify(self,array):$/;"	member	line:8	class:BinaryMaxHeap
+_siftup	/home/liangjj/work/Google!/leet/ds/binary_heaps.py	/^    def _siftup(self, index):$/;"	member	line:14	class:BinaryMaxHeap
+_siftdown	/home/liangjj/work/Google!/leet/ds/binary_heaps.py	/^    def _siftdown(self,index):$/;"	member	line:21	class:BinaryMaxHeap
+Max	/home/liangjj/work/Google!/leet/ds/binary_heaps.py	/^    def Max(self):$/;"	member	line:32	class:BinaryMaxHeap
+pop	/home/liangjj/work/Google!/leet/ds/binary_heaps.py	/^    def pop(self):$/;"	member	line:38	class:BinaryMaxHeap
+push	/home/liangjj/work/Google!/leet/ds/binary_heaps.py	/^    def push(self, val):$/;"	member	line:44	class:BinaryMaxHeap
+replace_key	/home/liangjj/work/Google!/leet/ds/binary_heaps.py	/^    def replace_key(self, index, val):$/;"	member	line:48	class:BinaryMaxHeap
+test	/home/liangjj/work/Google!/leet/ds/binary_heaps.py	/^def test():$/;"	function	line:58
+heapq_test	/home/liangjj/work/Google!/leet/ds/binary_heaps.py	/^def heapq_test():$/;"	function	line:67
+DisjointSet	/home/liangjj/work/Google!/leet/ds/disjointset.py	/^class DisjointSet(object):$/;"	class	line:1
+__init__	/home/liangjj/work/Google!/leet/ds/disjointset.py	/^    def __init__(self, n):$/;"	member	line:2	class:DisjointSet
+find	/home/liangjj/work/Google!/leet/ds/disjointset.py	/^    def find(self, index):$/;"	member	line:5	class:DisjointSet
+union	/home/liangjj/work/Google!/leet/ds/disjointset.py	/^    def union(self, indexA, indexB):$/;"	member	line:16	class:DisjointSet
+show	/home/liangjj/work/Google!/leet/ds/disjointset.py	/^    def show(self):$/;"	member	line:28	class:DisjointSet
+disjointset	/home/liangjj/work/Google!/leet/ds/disjointset.py	/^    disjointset = DisjointSet(7)$/;"	variable	line:32
+data structure	/home/liangjj/work/Google!/leet/ds/readme.md	/^## data structure$/;"	function	line:1
+树	/home/liangjj/work/Google!/leet/ds/readme.md	/^### 树$/;"	function	line:3
+Graph	/home/liangjj/work/Google!/leet/ds/graph.py	/^class Graph(object):$/;"	class	line:1
+DFS	/home/liangjj/work/Google!/leet/ds/graph.py	/^    def DFS(self, source):$/;"	member	line:3	class:Graph
+BFS	/home/liangjj/work/Google!/leet/ds/graph.py	/^    def BFS(self, source):$/;"	member	line:6	class:Graph
+Graph_adjacency_list	/home/liangjj/work/Google!/leet/ds/graph.py	/^class Graph_adjacency_list(Graph):$/;"	class	line:10
+__init__	/home/liangjj/work/Google!/leet/ds/graph.py	/^    def __init__(self, n, connect_info, isdirected):$/;"	member	line:11	class:Graph_adjacency_list
+TreeNode	/home/liangjj/work/Google!/leet/105.py	/^class TreeNode(object):$/;"	class	line:3
+__init__	/home/liangjj/work/Google!/leet/105.py	/^    def __init__(self, x):$/;"	member	line:4	class:TreeNode
+Solution	/home/liangjj/work/Google!/leet/105.py	/^class Solution(object):$/;"	class	line:9
+buildTree	/home/liangjj/work/Google!/leet/105.py	/^    def buildTree(self, preorder, inorder):$/;"	member	line:10	class:Solution
+make_node	/home/liangjj/work/Google!/leet/105.py	/^        def make_node(pre_start, pre_end, in_start, in_end):$/;"	function	line:17	function:Solution.buildTree
+dfs_print	/home/liangjj/work/Google!/leet/105.py	/^def dfs_print(tree):$/;"	function	line:42
+sol	/home/liangjj/work/Google!/leet/105.py	/^sol = Solution()$/;"	variable	line:48
+res	/home/liangjj/work/Google!/leet/105.py	/^res = sol.buildTree([9],[9])$/;"	variable	line:49
+NumberOfSetBits	/home/liangjj/work/Google!/leet/318.cpp	/^int NumberOfSetBits(int i)$/;"	function	line:7	signature:(int i)
+Solution	/home/liangjj/work/Google!/leet/318.cpp	/^class Solution {$/;"	class	line:16	file:
+maxProduct	/home/liangjj/work/Google!/leet/318.cpp	/^    int maxProduct(vector<string>& words) {$/;"	function	line:18	class:Solution	signature:(vector<string>& words)
+main	/home/liangjj/work/Google!/leet/318.cpp	/^int main(){$/;"	function	line:46	signature:()
