@@ -1,128 +1,87 @@
-
-class CacheNode:
+class Node(object):
     def __init__(self,key):
-        self.key  = key
+        self.key = key
         self.prev = None
         self.next = None
 
+class LRUCache(object):
 
-class LRUCache:
-    # @param capacity, an integer
     def __init__(self, capacity):
-        self.capacity = capacity
-        self.cache = {}
-        self.cacheLen = 0
-        self.cacheNodeList = None
+        """
+        :type capacity: int
+        """
+        self.head = None
+        self.tail = None
+        self.len = 0
+        self.cap = capacity
+        self.kv_store = {}
+        self.kn_store = {}
 
-    def insertToHead(self, cachenode):
-        if self.cacheNodeList == cachenode:
-            return
-        if self.cacheNodeList == None:
-            self.cacheNodeList = cachenode
-            self.cacheNodeList.next = cachenode
-            self.cacheNodeList.prev = cachenode
-            return
+    def update(self, key):
+        node = self.kn_store[key]
+        if node is not self.tail:
+            if node is self.head:
+                self.head = node.next
+                self.head.prev = None
+            else:
+                node.prev.next = node.next
+                node.next.prev = node.prev
+            node.next = None
+            self.tail.next = node
+            node.prev = self.tail
+            self.tail = node
 
-        if cachenode.prev != None:
-            cachenode.prev.next = cachenode.next
-            cachenode.next.prev = cachenode.prev
-        cachenode.next = self.cacheNodeList
-        cachenode.prev = self.cacheNodeList.prev
-        self.cacheNodeList.prev.next = cachenode
-        self.cacheNodeList.prev = cachenode
-        self.cacheNodeList = cachenode
-
-    def removeLastNode(self):
-        key = self.cacheNodeList.prev.key
-        #print "remove key should be second",key
-        if self.cacheLen == 1:
-            self.cacheNodeList = None
-        else:
-            # print self.cacheNodeList.prev.key
-            # print self.cacheNodeList.key
-            # print self.cacheNodeList.next.key
-            self.cacheNodeList.prev.prev.next = self.cacheNodeList
-            self.cacheNodeList.prev = self.cacheNodeList.prev.prev
-
-            # print self.cacheNodeList.prev.key
-            # print self.cacheNodeList.key
-            # print self.cacheNodeList.next.key
-        del self.cache[key]
-        #print "remove last node"
-        self.cacheLen -= 1
-        #self.printList()
-        #self.printList()
-
-    def printList(self):
-        print "print list order"
-        head = self.cacheNodeList
-        p = head
-        i=0
-        while i < self.cacheLen * 2:
-            print p.key,self.cache[p.key][0]
-            i += 1
-            p=p.next
-        print ""
-
-    def printListReverse(self):
-        print "print list reverse order"
-        p = self.cacheNodeList.prev
-        i=0
-        while i < self.cacheLen * 2:
-            print p.key,self.cache[p.key][0]
-            i += 1
-            p=p.prev
-        print ""
-
-
-    # @return an integer
     def get(self, key):
-        if key in self.cache:
-            cachenode = self.cache[key][1]
-            self.insertToHead(cachenode)
-            #self.printList()
-            #self.printListReverse()
-            return self.cache[key][0]
-
+        """
+        :rtype: int
+        """
+        if key in self.kv_store:
+            self.update(key)
+            return self.kv_store[key]
         else:
             return -1
 
-
-
-    # @param key, an integer
-    # @param value, an integer
-    # @return nothing
     def set(self, key, value):
-        if self.capacity == 0:
-            return
-        if self.get(key) != -1:
-            self.cache[key][0] = value
+        """
+        :type key: int
+        :type value: int
+        :rtype: nothing
+        """
+        if key in self.kv_store:
+            self.kv_store[key] = value
+            self.update(key)
         else:
-            if self.cacheLen >= self.capacity:
-                self.removeLastNode()
-            cacheNode = CacheNode(key)
-            self.insertToHead(cacheNode)
-            self.cache[key] = [value,cacheNode]
-            self.cacheLen += 1
-        #self.printList()
-        #self.printListReverse()
-        #print self.cache
+            if self.len == self.cap:
+                delete_key = self.head.key
+                if self.cap == 1:
+                    self.tail = None
+                    self.head = None
+                else:
+                    self.head = self.head.next
+                    self.head.prev = None
+                self.len -= 1
+                del self.kv_store[delete_key]
+                del self.kn_store[delete_key]
+
+            node = Node(key)
+            if not self.head:
+                self.head = node
+                self.tail = node
+            else:
+                self.tail.next = node
+                node.prev = self.tail
+                self.tail = node
+            self.kn_store[key] = node
+            self.kv_store[key] = value
+            self.len += 1
 
 
-#print [0,1,1].extend([2,3,4])
-lruCache = LRUCache(3)
-#print "set 1"
-lruCache.set("first",1)
-#print "set 2"
-lruCache.set("second",2)
-#print "set 3"
-lruCache.set("third",3)
-#print "get 1"
-print lruCache.get("first")
-#print "set 3"
-lruCache.set("third",33)
-#print "set 4"
-lruCache.set("fourth",4)
-
-
-
+cache = LRUCache(2)
+cache.set(1,1)
+cache.set(2,2)
+cache.set(3,3)
+print cache.get(1)
+print cache.get(2)
+cache.set(4,4)
+print cache.get(2)
+print cache.get(3)
